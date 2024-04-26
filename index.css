@@ -1,0 +1,64 @@
+.body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+}
+.bg-dark {
+  background-color: black !important;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+}
+.logo {
+  color: white;
+  font-size: 25px;
+}
+.hero_img {
+  height: 90vh;
+}
+.desktop-header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 5;
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.247);
+}
+.nav_list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin-bottom: 0;
+}
+.nav_list a {
+  text-decoration: none;
+  color: white;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 6;
+}
+
+.hero_section {
+  position: relative;
+}
+.hero_content {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  z-index: 5;
+}
+
+input,
+textarea:focus {
+  box-shadow: none !important;
+  border-color: black !important;
+}
