@@ -103,7 +103,7 @@ textarea:focus {
 
 .image-container img {
   width: 100%;
-
+  padding: 25px;
   cursor: pointer;
 }
 
@@ -184,5 +184,8 @@ textarea:focus {
   .carousel-control-prev,
   .carousel-control-next {
     display: none;
+  }
+  .image-container img {
+    padding: 40px;
   }
 }
