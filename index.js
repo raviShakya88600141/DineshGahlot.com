@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (!images.length || !lightbox || !lightboxImage) {
     console.error("Required elements not found.");
-    return; // Exit early if required elements are missing
+    return;
   }
 
   images.forEach((img) => {
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
       lightboxImage.src = src;
       lightboxImage.alt = alt;
       lightbox.style.display = "block";
-      event.stopPropagation(); // Stop event propagation if necessary
+      event.stopPropagation();
     });
   });
 
@@ -26,5 +26,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   } else {
     console.error("Close button not found.");
+  }
+});
+
+window.addEventListener("scroll", function () {
+  var header = document.getElementById("main-header");
+  var scrollPosition = window.scrollY;
+
+  if (scrollPosition > 20) {
+    header.style.background = "black";
+  } else {
+    header.style.background = "transparent";
   }
 });
